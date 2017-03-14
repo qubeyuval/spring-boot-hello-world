@@ -1,4 +1,4 @@
-name: muditaTesting2
+name: testMudita1
 language: java
 pipeline: build_bake_test_deployment:v0.1
 security:
@@ -8,6 +8,7 @@ notification:
   domain: 
   channel: qubeship
 build:
+  skip: false
   image:
     name: maven:3.3-jdk-8-onbuild
     onbuild:
@@ -15,6 +16,7 @@ build:
   publish_artifact: target/
   lint: true
 bake:
+  skip: false
   strategy: docker
   script: Dockerfile
   repositories:
@@ -28,7 +30,7 @@ test:
 deployment:
   skip: true
   continuous_deployment: true
-  service_name: mudita-testing2
+  service_name: test
   environments:
     prod:
       - type: qubeship_managed
