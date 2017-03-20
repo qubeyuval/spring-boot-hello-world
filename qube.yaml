@@ -1,4 +1,4 @@
-name: ydiprjjava15
+name: prjydijava1
 language: java
 pipeline: build_bake_test_deployment:v0.1
 security:
@@ -30,7 +30,7 @@ test:
 deployment:
   skip: true
   continuous_deployment: true
-  service_name: ydicntjava15
+  service_name: cntydijava1
   environments:
     prod:
       - type: qubeship_managed
