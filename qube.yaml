@@ -1,0 +1,32 @@
+id: 6752ac25-5d49-47ee-a226-9119791ea859
+version: v2
+name: Spring-Hello-World
+apptype: api
+language: java
+containerName: spring-hello-world
+toolchain:
+  id: 58f01e0d8ef1e700214218c3
+  name: Qubeship-Java-Toolchain
+opinion:
+  id: 58e2fb9fe2a801000e8cb43e
+  name: Qubeship Out of the box opinion
+endpoint:
+  id: 58e2fba32a0603000b3e58a6
+  name: Qubeship Sandbox Cluster
+  type: target
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - target/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
