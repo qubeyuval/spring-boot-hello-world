@@ -1,17 +1,17 @@
-id: 6752ac25-5d49-47ee-a226-9119791ea859
+id: 27a7c8ac-9712-4d93-a0eb-6a1be9a5a87b
 version: v2
-name: Spring-Hello-World
+name: HyunjiTester0503
 apptype: api
 language: java
-containerName: spring-hello-world
+containerName: hyunjitester0503
 toolchain:
-  id: 58f01e0d8ef1e700214218c3
+  id: 5908cf49d1a47f002010b95d
   name: Qubeship-Java-Toolchain
 opinion:
-  id: 58e2fb9fe2a801000e8cb43e
-  name: Qubeship Out of the box opinion
+  id: 5908cf7dacfc9a000b226a5f
+  name: Qubeship default opinion
 endpoint:
-  id: 58e2fba32a0603000b3e58a6
+  id: 5908cf49168303000bee528c
   name: Qubeship Sandbox Cluster
   type: target
 variables:
