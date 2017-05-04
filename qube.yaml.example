@@ -1,17 +1,17 @@
-id: 5404be7e-8084-4010-80b7-6bfd68383383
+id: 6752ac25-5d49-47ee-a226-9119791ea859
 version: v2
-name: spring-new-everything
+name: Spring-Hello-World
 apptype: api
 language: java
-containerName: spring-new-everything
+containerName: spring-hello-world
 toolchain:
-  id: 58e5db5bacac5a0020e2b939
+  id: 58f01e0d8ef1e700214218c3
   name: Qubeship-Java-Toolchain
 opinion:
-  id: 58e5da9513d0cc000e88a961
-  name: Qubeship default opinion
+  id: 58e2fb9fe2a801000e8cb43e
+  name: Qubeship Out of the box opinion
 endpoint:
-  id: 58e1cbf02a0603000b3e58a4
+  id: 58e2fba32a0603000b3e58a6
   name: Qubeship Sandbox Cluster
   type: target
 variables:
