@@ -1,0 +1,32 @@
+id: d8bb86f3-12d1-44e3-9f9a-8ca6a7d27619
+version: v2
+name: spring-boot-hello-world
+apptype: api
+language: java
+containerName: spring-boot-hello-world
+toolchain:
+  id: 58fa845a8ef1e700214218ed
+  name: Qubeship-Java-Toolchain
+opinion:
+  id: 58fa845ae936e0000e15136e
+  name: Qubeship default opinion
+endpoint:
+  id: 58fa845d238503000b74d80c
+  name: qubeship-customer-docker-registry
+  type: registry
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - target/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
